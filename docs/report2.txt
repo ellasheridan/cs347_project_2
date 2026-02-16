@@ -1,1 +1,15 @@
 report2.txt
+
+Add observations to report2.txt about:
+    install experience for both tools
+    what objects are created by sakila-database.sql
+    how sakila-data.sql populates tables
+
+
+In project2.sql, include:
+5 row-count queries (5 different tables)
+    5 sample queries using LIMIT (5 different tables, few columns)
+    1 query with both WHERE + ORDER BY and a short comment
+    1 INSERT with short comment
+    1 UPDATE with short comment
+    1 DELETE with short comment
