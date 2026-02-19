@@ -1,15 +1,24 @@
-report2.txt
+Project 2 Report for CS 347
+1) The Experience of Installation
 
-Add observations to report2.txt about:
-    install experience for both tools
-    what objects are created by sakila-database.sql
-    how sakila-data.sql populates tables
+I chose the default configuration options, such as the default port and automatic
+service startup, when I installed MySQL Community Server using the official installer.
+After the installation was successful, I was able to use MySQL Workbench and the 
+command-line interface to connect to the server right away. During setup, I had no problems. 
+Without requiring any extra setup, MySQL Workbench installed without any issues and 
+identified the local server. Using localhost and the default port (3306), I established 
+a local connection, and everything went according to plan.
 
+2) Sakila-database.sql observations
+The Sakila database's structure is specified in the sakila-database.sql file. 
+The schema, tables (including actor, movie, customer, rental, and payment), 
+primary keys, foreign key constraints, indexes, views, stored procedures, and 
+triggers are all created by it. In order to preserve data integrity, this 
+script creates the entire database structure and enforces table relationships.
 
-In project2.sql, include:
-5 row-count queries (5 different tables)
-    5 sample queries using LIMIT (5 different tables, few columns)
-    1 query with both WHERE + ORDER BY and a short comment
-    1 INSERT with short comment
-    1 UPDATE with short comment
-    1 DELETE with short comment
+3) Notes regarding sakila-data.sql
+Using numerous INSERT statements, the sakila-data.sql file adds sample data to 
+the database. To guarantee that related records are created correctly, the data 
+is inserted in a sequence that complies with foreign key constraints. This script 
+adds realistic data to the previously defined schema, enabling instant 
+testing of database operations and queries.

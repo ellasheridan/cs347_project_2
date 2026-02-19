@@ -20,7 +20,8 @@ SELECT rental_id, rental_date, inventory_id, customer_id FROM rental LIMIT 5;
 SELECT customer_id, first_name, last_name, active
 FROM customer
 WHERE active = 1
-ORDER BY last_name ASC, first_name ASC;
+ORDER BY last_name ASC, first_name ASC
+LIMIT 25;
 
 -- 4) INSERT statement
 -- Insert a new actor row with explicit values.
