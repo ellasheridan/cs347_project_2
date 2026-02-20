@@ -11,7 +11,7 @@ a local connection, and everything went according to plan.
 
 2) Sakila-database.sql observations
 The Sakila database's structure is specified in the sakila-database.sql file. 
-The schema, tables (including actor, movie, customer, rental, and payment), 
+The schema, tables (including actor, film, customer, rental, and payment), 
 primary keys, foreign key constraints, indexes, views, stored procedures, and 
 triggers are all created by it. In order to preserve data integrity, this 
 script creates the entire database structure and enforces table relationships.
